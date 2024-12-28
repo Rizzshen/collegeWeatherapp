@@ -159,3 +159,40 @@ button.icon:active{
 #pressure-value,#wind{
   margin-left: -30px;
 }
+@media screen and (max-width: 680px) {
+  button.icon {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  #input {
+    width: calc(100% - 30px);
+  }
+
+  #humidities, #winds, #pressure, #direction {
+    flex-wrap: nowrap; /* Prevent rows from wrapping */
+    justify-content: space-between;
+  }
+  .container2{
+    flex-direction: column;
+    height:auto;
+    width: auto;
+  }
+  .container1{
+    width: 500px;
+    margin: 10px 10px;
+  }
+  #containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 10px 10px;
+  }
+  .container3, .container4, #form{
+    position: static; 
+    width: 80%;       
+    margin: 10px 0;   
+    text-align: left;
+  }
