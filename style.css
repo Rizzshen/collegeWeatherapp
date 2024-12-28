@@ -80,7 +80,6 @@ body {
   margin-top: 20px;
   position:absolute;
   top: 200px;
-  left: 263px;
   background-color: rgb(36, 40, 41);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -91,7 +90,8 @@ body {
   border: 1px solid rgba(32, 18, 18, 0.695);
   height: 30px;                 
   padding: 0 10px;            
-  flex-grow: 1;  
+  flex-grow: 1; 
+  width:250px; 
   transition: all 0.3s ease;      
 }
 #input:focus {
@@ -129,15 +129,15 @@ button.icon:active{
   width: 300px;  
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.574);
 }
-.container3{
+.container3,.container4,#form{
   position: absolute;
-  top: 20px;
   right: 20px;
 }
 .container4{
-  position: absolute;
-  top: 120px;
-  right: 20px;
+  top: 120px;  
+}
+.container3{
+  top: 20px;
 }
 #humidities,#winds,#pressure,#direction{
   display: flex;
@@ -159,7 +159,7 @@ button.icon:active{
 #pressure-value,#wind{
   margin-left: -30px;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
   button.icon {
     font-size: 14px;
     padding: 5px 10px;
